@@ -1,11 +1,91 @@
+<!--
+Objective: Build an app that is functionally similar to https://tribute-page.freecodecamp.rocks
+
+User Stories:
+
+Your tribute page should have an element with a corresponding id="main", which contains all other elements
+You should see an element with an id of title, which contains a string (i.e. text), that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug")
+You should see either a figure or a div element with an id of img-div
+Within the img-div element, you should see an img element with a corresponding id="image"
+Within the img-div element, you should see an element with a corresponding id="img-caption" that contains textual content describing the image shown in img-div
+You should see an element with a corresponding id="tribute-info", which contains textual content describing the subject of the tribute page
+You should see an a element with a corresponding id="tribute-link", which links to an outside site, that contains additional information about the subject of the tribute page. HINT: You must give your element an attribute of target and set it to _blank in order for your link to open in a new tab
+Your #image should use max-width and height properties to resize responsively, relative to the width of its parent element, without exceeding its original size
+Your img element should be centered within its parent element
+
+-->
+
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Microverse Trial Project</title>
+    <title>Tribute Page</title>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
-    <h1>Hello World, we are software developers</h1>
+    <main id="main">
+        <h1 id="title">Dr Nelson Mandela</h1>
+        <figure id="img-div">
+            <img id="image" src="https://cdn.britannica.com/93/173193-131-3EE3B458/Nelson-Mandela-South-African.jpg">
+            <figcaption id="img-caption">Picture of Nelson Mandela </figcaption>
+        </figure>
+        <ul id="tribute-info">
+            <li><strong>Childhood: 1918–1934</strong>:&nbsp;Mandela was born on 18 July 1918 in the village of Mvezo in
+                Umtata, then part of South Africa's Cape Province.[2] Given the forename Rolihlahla,[3] a Xhosa term
+                colloquially meaning "troublemaker",[4] in later years he became known by his clan name, Madiba.[5] His
+                patrilineal great-grandfather, Ngubengcuka, was ruler of the Thembu Kingdom in the Transkeian
+                Territories of South Africa's modern Eastern Cape province.[6] One of Ngubengcuka's sons, named Mandela,
+                was Nelson's grandfather and the source of his surname.[7] Because Mandela was the king's child by a
+                wife of the Ixhiba clan, a so-called "Left-Hand House", the descendants of his cadet branch of the royal
+                family were morganatic, ineligible to inherit the throne but recognised as hereditary royal councillors.
+            </li>
+            <li>
+                <strong>Clarkebury, Healdtown, and Fort Hare: 1934–1940</strong>:&nbsp;Intending to gain skills needed
+                to become a privy councillor for the Thembu royal house, Mandela began his secondary
+                education in 1933 at Clarkebury Methodist High School in Engcobo, a Western-style institution that was
+                the largest
+                school for black Africans in Thembuland.[25] Made to socialise with other students on an equal basis, he
+                claimed that he
+                lost his "stuck up" attitude, becoming best friends with a girl for the first time; he began playing
+                sports and
+                developed his lifelong love of gardening.[
+            </li>
+            <li>
+                <strong>Arriving in Johannesburg: 1941–1943</strong>:&nbsp;Returning to Mqhekezweni in December 1940,
+                Mandela found that Jongintaba had arranged marriages for him and Justice;
+                dismayed, they fled to Johannesburg via Queenstown, arriving in April 1941.[40] Mandela found work as a
+                night watchman
+                at Crown Mines, his "first sight of South African capitalism in action", but was fired when the induna
+                (headman)
+                discovered that he was a runaway.[41] He stayed with a cousin in George Goch Township, who introduced
+                Mandela to realtor
+                and ANC activist Walter Sisulu. The latter secured Mandela a job as an articled clerk at the law firm of
+                Witkin,
+                Sidelsky and Eidelman, a company run by Lazar Sidelsky, a liberal Jew sympathetic to the ANC's
+                cause.[42] At the firm,
+                Mandela befriended Gaur Radebe—a Hlubi member of the ANC and Communist Party—and Nat Bregman, a Jewish
+                communist who
+                became his first white friend.[43] Mandela attended Communist Party gatherings, where he was impressed
+                that Europeans,
+                Africans, Indians, and Coloureds mixed as equals. He later stated that he did not join the party because
+                its atheism
+                conflicted with his Christian faith, and because he saw the South African struggle as being racially
+                based rather than
+                as class warfare.[44] To continue his higher education, Mandela signed up to a University of South
+                Africa correspondence
+                course, working on his bachelor's degree at night.[45]
+
+            </li>
+        </ul>
+        <p>For more information about Nelson Mandela, see <a id="tribute-link"
+                href="https://en.wikipedia.org/wiki/Nelson_Mandela" target="_blank"> Mandela Wikipedia page</a></p>
+    </main>
+</body>
+
 </html>
